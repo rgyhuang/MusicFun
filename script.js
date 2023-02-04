@@ -137,7 +137,8 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
       artists = document.getElementsByClassName("artist");
       wrapper = document.getElementsByClassName("wrapper");
       instructions = document.getElementsByClassName("instructions");
-      // more = document.getElementsByClassName("seeMore");
+      more = document.getElementsByClassName("seeMore");
+      guidelines = document.getElementsByClassName("guidelines");
       console.log(d["name"]);
       for(var i = 0; i < title.length; i++){
         title[i].innerText = d["name"];    // Change the content
@@ -145,7 +146,10 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
         artists[i].innerText = d["artists"][0]["name"]; 
         instructions[i].innerText = ""; 
         wrapper[i].style.backgroundImage= "url(" + d["album"]["images"][0]["url"] + ")";
-        // more[i].style.backgroundImage= "url(" + d["external_urls"]["spotify"] + ")";
+        guidelines[i].innerText = ""; 
+        more[i].onclick = function () {
+        location.href = d["external_urls"]["spotify"];
+    };
       } 
   })
   //we return the exact flag of each country from the image
@@ -184,7 +188,7 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
   //the tooltip with the name of the country is going to show up
   function mouseoverHandler (d) {
      tooltip.transition().style('opacity', .9)
-     tooltip.html('<p>' + d["title"] + '</p>' );
+     tooltip.html('<p>' + d["name"] + '</p>' );
   }
   //leaving a flag
   //the tooltip will disappear
@@ -206,11 +210,25 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
 
   }
 
-  document.addEventListener('keyup', function(e){
+function guide()
+{
+x=document.getElementsByClassName("seeMore");  // Find the elements
+guides = document.getElementsByClassName("guidelines");
+    for(var i = 0; i < x.length; i++){
+      if (guides[i].innerText == "") {
+        guides[i].innerText = "We created Music Fun :3 to give music recommendations based on your mood! write out anything you have in mind and enjoy browsing through your song recs! \n\n\n examples: \n\n i'm so excited to eat out today \n\n hype me up! \n\n its cold and rainy outside right now :( \n\n\n\n <<-- press the glowing blobss to find your songs :)'";
+      }
+      else {
+        guides[i].innerText = "";
+      }
+  }
+
+}
+document.addEventListener('keyup', function(e){
     if(e.keyCode == 13){
-      var search = document.getElementsByClassName('search')[0].value 
-      console.log(search)
-      myfunction_onload(search)
+      var search = document.getElementsByClassName('search')[0].value;
+      console.log(search);
+      myfunction_onload(search);
     }
 
   })
