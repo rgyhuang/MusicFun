@@ -21,6 +21,7 @@ This project was built with a html/css javascript frontend and python backend. W
 ```
 pip install tensorflow
 pip install flask
+pip install flask_co
 pip install pandas
 pip install numpy
 pip install scikit
