@@ -1,6 +1,6 @@
 # Music Fun :3
 
-![Image Demo]([https://i.imgur.com/3O99hp0.jpg](https://i.imgur.com/gTq9Gpy.png))
+![Demo](https://i.imgur.com/gTq9Gpy.png)
 
 ## What is title?
 Our project features the following functionalities:
