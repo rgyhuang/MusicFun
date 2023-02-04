@@ -88,7 +88,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 .name {
     position: fixed;
     /* background: lightgray; */
-    top: 59vh;
+    top: 60.5vh;
     width: 20vw;
     right: calc(100vw/2 - 40vw);
     text-align: center;
@@ -100,7 +100,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 .artist {
     position: fixed;
     /* background: lightgray; */
-    top: 65.5vh;
+    top: 58.5vh;
     width: 20vw;
     right: calc(100vw/2 - 40vw);
     text-align: center;
