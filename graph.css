@@ -1,0 +1,576 @@
+/* #container { */
+    /* position: absolute; */
+    /* margin: auto; */
+    /* left: -14vw; */
+/* } */
+
+.link { stroke: rgb(172, 172, 172); }
+
+#flags {
+  position: absolute;
+}
+
+/* 
+* find the flag-sprite here: https://www.flag-sprites.com/
+* create an image and downlaod the file...
+*
+* You don't have to upload your own image, 
+* you can simply right click on the flag-sprites's image 
+* and select copy image address.
+*
+* In flags.css (from the file you download) you can copy-paste the .flag.flag-ad section
+*/
+
+.flag {
+    width:100px;
+    height: 100px;
+  position: absolute;
+	background: url(https://freepngimg.com/thumb/categories/220.png) no-repeat;
+    /* border: none !important; */
+    background-size: 100% 100%;
+    object-fit: contain;
+    border-color: white !important;
+    border-radius: 1000px;
+}
+
+.flag.flag-1 {
+    background-image: url(images/green.png);
+    background-size: 100%;
+}
+.flag.flag-2 {
+    background-image: url(images/pink.png);
+    background-size: 100%;
+}
+.flag.flag-3 {
+    background-image: url(images/purple.png);
+    background-size: 100%;
+}
+.flag.flag-4 {
+    background-image: url(images/blue.png);
+    background-size: 100%;
+}
+.flag.flag-5 {
+    background-image: url(images/yellow.png);
+    background-size: 100%;
+}
+/* .flag.flag-ad {background-image: url(https://samplesongs.netlify.app/album-arts/bad-liar.jpg);
+width:100px; height: 100px; border: none;}
+.flag.flag-ae {background-image: url(https://samplesongs.netlify.app/album-arts/bad-liar.jpg);
+width:100px; height: 100px; border: none;}
+.flag.flag-af {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ag {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ai {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-al {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-am {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-an {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ao {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ar {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-as {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-at {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-au {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-aw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-az {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ba {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bb {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bd {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-be {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bf {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bh {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bi {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bj {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bo {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-br {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bs {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bt {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bv {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-by {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-bz {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ca {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-catalonia {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cd {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cf {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ch {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ci {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ck {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cl {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-co {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cu {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cv {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cy {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-cz {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-de {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-dj {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-dk {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-dm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-do {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-dz {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ec {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ee {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-eg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-eh {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-england {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-er {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-es {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-et {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-eu {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-fi {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-fj {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-fk {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-fm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-fo {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-fr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ga {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gb {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gd {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ge {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gf {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gh {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gi {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gl {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gp {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gq {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gs {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gt {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gu {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-gy {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-hk {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-hm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-hn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-hr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ht {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-hu {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ic {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-id {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ie {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-il {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-im {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-in {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-io {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-iq {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ir {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-is {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-it {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-je {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-jm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-jo {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-jp {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ke {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-kg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-kh {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ki {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-km {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-kn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-kp {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-kr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-kurdistan {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-kw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ky {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-kz {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-la {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-lb {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-lc {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-li {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-lk {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-lr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ls {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-lt {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-lu {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-lv {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ly {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ma {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mc {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-md {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-me {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mh {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mk {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ml {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mo {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mp {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mq {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ms {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mt {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mu {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mv {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mx {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-my {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-mz {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-na {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-nc {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ne {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-nf {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ng {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ni {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-nl {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-no {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-np {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-nr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-nu {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-nz {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-om {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pa {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pe {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pf {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ph {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pk {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pl {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ps {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pt {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-pw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-py {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-qa {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-re {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ro {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-rs {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ru {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-rw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sa {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sb {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sc {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-scotland {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sd {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-se {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sh {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-si {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sk {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sl {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-so {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-somaliland {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ss {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-st {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sv {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sx {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sy {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-sz {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tc {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-td {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tf {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-th {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tibet {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tj {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tk {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tl {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-to {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tr {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tt {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tv {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-tz {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ua {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ug {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-um {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-us {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-uy {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-uz {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-va {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-vc {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ve {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-vg {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-vi {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-vn {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-vu {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-wales {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-wf {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ws {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-xk {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-ye {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-yt {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-za {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-zanzibar {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-zm {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;}
+.flag.flag-zw {background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/191/986/small/circle-logo.png);
+width:100px; height: 100px; border: none;} */
+
+
+/*
+ * Footer
+ */
+a:link    {color:orangered;  text-decoration:none}
+a:visited {color:orangered; text-decoration:none}
+a:hover   {color:red; text-decoration:underline}
+
+.tableFooter{
+  margin-top: 15px;
+}
+.footerSvg{
+  width: 32px;
+}
