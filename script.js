@@ -1,5 +1,43 @@
 // Define the dimensions of the visualization. 
 // We're using a size that's convenient for displaying the graphic on
+
+// run python script and write to output.json
+// $.ajax({
+//   type: "POST",
+//   url: "~/main.py",
+//   data: { param: text}
+// }).done(function( o ) {
+//    // do something
+// });
+
+
+function myfunction_onload(prompt){
+  console.log("Running code...")
+  var pass_to_python = prompt
+  $.ajax({
+      type:'POST',
+      dataType: 'json',
+      contentType:'application/json;charset-utf-08',
+      url: "http://127.0.0.1:5000/run_app?value='"+pass_to_python,
+      success:function (data) {
+        var reply=data.reply;
+        if (reply=="success")
+        {
+            return;
+        }
+        else
+            {
+            alert("some error ocured in session agent")
+            }
+        }
+      })
+  console.log("Done!")
+}
+
+// myfunction_onload()
+
+
+
 // console.log(window.innerWidth)
 var margin  = {top: 10, right: 5, bottom: 10, left: 100},
     width   = 1150-margin.left-margin.right,
@@ -28,6 +66,23 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
 // d3.json("https://raw.githubusercontent.com/DealPete/forceDirected/master/countries.json",function(data){ 
   d3.json("output.json",function(data){ 
     console.log(data["tracks"]);
+
+  // ensure that json has links field
+
+  data["links"] = [
+    { "target": 1, "source": 2 },
+    { "target": 1, "source": 3 },
+    { "target": 1, "source": 4 },
+    { "target": 2, "source": 1 },
+    { "target": 2, "source": 3 },
+    { "target": 2, "source": 4 },
+    { "target": 3, "source": 1 },
+    { "target": 3, "source": 2 },
+    { "target": 3, "source": 4 },
+    { "target": 4, "source": 2 },
+    { "target": 4, "source": 3 }
+  ];
+  
   // Extract the nodes and links from the data.
   var nodes = data["tracks"];
   var links = data["links"];
@@ -95,8 +150,7 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
         more[i].onclick = function () {
           window.open(
             d["external_urls"]["spotify"], "_blank");
-        // location.href = d["external_urls"]["spotify"];
-    };
+        };
       } 
   })
   //we return the exact flag of each country from the image
@@ -157,19 +211,6 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
 
   }
 
-  document.addEventListener('keyup', function(e){
-    if(e.keyCode == 13)
-    console.log(document.getElementsByClassName("search")[0].value)
-      // window.location.reload();
-  })
-
-
-//   document.getElementByClassName("seeMore").addEventListener("click", guide);
-
-// function guide() {
-//   document.getElementByClassName("guidelines").innerText = "hi there!";
-// }
-
 function guide()
 {
 x=document.getElementsByClassName("seeMore");  // Find the elements
@@ -177,14 +218,19 @@ guides = document.getElementsByClassName("guidelines");
     for(var i = 0; i < x.length; i++){
       if (guides[i].innerText == "") {
         guides[i].innerText = "We created Music Fun :3 to give music recommendations based on your mood! write out anything you have in mind and enjoy browsing through your song recs! \n\n\n examples: \n\n i'm so excited to eat out today \n\n hype me up! \n\n its cold and rainy outside right now :( \n\n\n\n <<-- press the blobs to find your songs :D";
+
       }
       else {
         guides[i].innerText = "";
       }
-    // document.getElementsByClassName("guidelines")[i].innerText= "We created ___ to give music recommendations based on your mood! write out anything you have in mind and enjoy browsing through your song recs! \n \n examples: \n\n 'i'm so excited to eat out today' \n\n 'hype me up!' \n\n 'its cold and rainy outside right now :('";    // Change the content
-    // console.log(document.getElementsByClassName("search")[i].value)
   }
 
 }
+document.addEventListener('keyup', function(e){
+    if(e.keyCode == 13){
+      var search = document.getElementsByClassName('search')[0].value;
+      console.log(search);
+      myfunction_onload(search);
+    }
 
-// console.log()
+  })

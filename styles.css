@@ -101,6 +101,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     position: fixed;
     /* background: lightgray; */
     top: 58.5vh;
+
     width: 20vw;
     right: calc(100vw/2 - 40vw);
     text-align: center;

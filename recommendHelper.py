@@ -204,6 +204,4 @@ def generateRecommendURL(emotion, seedArtist, seedTrack, limit):
     max_e = emotionMapping[emotion]["max_energy"];
     min_v = emotionMapping[emotion]["min_valence"];
     max_v = emotionMapping[emotion]["max_valence"];
-    key = 'BQD-enbCqXm7_llnFtUO047rKjtK8h46G05UrB5GbHtBLvdQOLe-9CBbmPEtubzFErzOUbX5bWIahdFpkD7wCnbknJj6e62IqDnbpXQYD4DfZQtxlDuSVCGrAF_gi2gwkdexGEbMe9aadlddhoekbFmGY5z_kgQiVIPG2VR2TY0FvC6AuWvFAPPCBbIxCwtLZgX5'
-    print(key)
     return f'https://api.spotify.com/v1/recommendations?seed_artists={seedArtist}&seed_tracks={seedTrack}&min_danceability={min_d}&max_danceability={max_d}&min_energy={min_e}&max_energy={max_e}&min_valence={min_v}&max_valence={max_v}&min_popularity=25&limit={limit}'
