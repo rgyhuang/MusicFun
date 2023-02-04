@@ -26,10 +26,10 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
         });
 
 // d3.json("https://raw.githubusercontent.com/DealPete/forceDirected/master/countries.json",function(data){ 
-  d3.json("tracks.json",function(data){ 
-    console.log(data);
+  d3.json("output.json",function(data){ 
+    console.log(data["tracks"]);
   // Extract the nodes and links from the data.
-  var nodes = data["nodes"];
+  var nodes = data["tracks"];
   var links = data["links"];
   // Now we create a force layout object and define its properties.
   // Those include the dimensions of the visualization and the arrays
@@ -82,13 +82,16 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
       artists = document.getElementsByClassName("artist");
       wrapper = document.getElementsByClassName("wrapper");
       instructions = document.getElementsByClassName("instructions");
-    for(var i = 0; i < title.length; i++){
-    title[i].innerText = d["title"];    // Change the content
-    albumCover[i].style.backgroundImage= "url(" + d["artwork"] + ")"; 
-    artists[i].innerText = d["artist"]; 
-    instructions[i].innerText = ""; 
-    wrapper[i].style.backgroundImage= "url(" + d["artwork"] + ")";
-    } 
+      // more = document.getElementsByClassName("seeMore");
+      console.log(d["name"]);
+      for(var i = 0; i < title.length; i++){
+        title[i].innerText = d["name"];    // Change the content
+        albumCover[i].style.backgroundImage= "url(" + d["album"]["images"][0]["url"] + ")"; 
+        artists[i].innerText = d["artists"][0]["name"]; 
+        instructions[i].innerText = ""; 
+        wrapper[i].style.backgroundImage= "url(" + d["album"]["images"][0]["url"] + ")";
+        // more[i].style.backgroundImage= "url(" + d["external_urls"]["spotify"] + ")";
+      } 
   })
   //we return the exact flag of each country from the image
     .attr('class', function (d) { return 'flag flag-' + Math.floor((Math.random() * (10 - 1) + 1)).toString(); })
