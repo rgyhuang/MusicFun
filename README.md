@@ -1,6 +1,6 @@
-# TItle
+# Music Fun :3
 
-![Mr. Blurb Bot](https://i.imgur.com/3O99hp0.jpg)
+![Demo](https://i.imgur.com/gTq9Gpy.png)
 
 ## What is title?
 Our project features the following functionalities:
@@ -9,21 +9,22 @@ Our project features the following functionalities:
 
 
 ## How we made it
-This project was built with a html/css javascript frontend and python backend. We used 
+This project was built with a html/css javascript frontend and python backend. We used D3.js to make the amazing interactive graph! Music Fun used the [emotify model](https://github.com/orzymandias/emotify-model) to classify the emotion of a particular phrases of text. Afterward encoding the classification, a random seed artist and song is chosen based (this is to put into our Spotify API request). A GET request is sent to the [spofity recommendation API](https://developer.spotify.com/console/get-recommendations). After extracting the responses from the API, we associate each recommendation with a node and connect the nodes together to form a graph representation of the results!
 
-## Commands
-* `/cute <search>` For Giphy Search
-* `/anime <search>` For TenorGif Search
-* `/weather <city>` For weather search
-* Blurb Bot automatically responds to text input channel!
-
-![Demo](https://i.imgur.com/UjAB98T.png)
-Sorry KEL...
+## What we would have done if we had more time
+* Randomly distribute node connections
+* Further polish our graph aesthetics
+* Allow for variable numbers of requests (we currently only fetch 12 requests each time)
+* Add varying more seeds for artists and songs to increase randomization
 
 ## Modules for Development
 ```
-pip install py-cord
-pip install python-dotenv
+pip install tensorflow
+pip install flask
+pip install flask_co
+pip install pandas
+pip install numpy
+pip install scikit
 ```
 
-## Blurb is waiting for you... :3
+## Have fun~~~ :3333
