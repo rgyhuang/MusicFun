@@ -1,16 +1,3 @@
-// Define the dimensions of the visualization. 
-// We're using a size that's convenient for displaying the graphic on
-
-// run python script and write to output.json
-// $.ajax({
-//   type: "POST",
-//   url: "~/main.py",
-//   data: { param: text}
-// }).done(function( o ) {
-//    // do something
-// });
-
-
 function myfunction_onload(prompt){
   console.log("Running code...")
   var pass_to_python = prompt

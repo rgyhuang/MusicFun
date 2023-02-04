@@ -9,7 +9,7 @@ from tensorflow import keras
 from sklearn.model_selection import train_test_split
 import requests
 import json
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 from recommendHelper import *
@@ -29,17 +29,16 @@ def main():
   x_train, y_train, x_test, y_test = train_test_split(content, sentiment, test_size=0.20, shuffle=True, random_state=42)
   print(" Training: size", x_train.shape[0])
   print(" Validation size:",y_train.shape[0])
-  training_data, validation_data, training_label, validation_label = np.array(x_train.content), np.array(y_train.content), np.array(x_test), np.array(y_test)
+  training_data = np.array(x_train.content)
 
   # set model parameters
   TOP_K = 10000
   MAX_SEQUENCE_LENGTH = 28
-  num_classes = 4
 
   #instatiate saved model
   model = keras.models.load_model('emotifyModif/my_model.h5', compile=False)
-  # categories for testing
-  labels = ["anger", "fear", "happiness", "sadness"]
+  # # categories for testing
+  # labels = ["anger", "fear", "happiness", "sadness"]
 
   # encode input string and pass into model
   def tokenize_and_pad(input):
