@@ -79,7 +79,7 @@ def main():
   NUMTRACKS = 20;
   MAXARTISTINDEX = NUMARTISTS - 1;
   MAXTRACKINDEX = NUMTRACKS - 1;
-  NUMRESULTS = 5;
+  NUMRESULTS = 12;
 
   seedArtistIndex = round(random.randrange(0, MAXARTISTINDEX));
   seedTrackIndex = round(random.randrange(0, MAXTRACKINDEX));
