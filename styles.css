@@ -58,6 +58,13 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     padding: 15px;
 }
 
+/* .song-info{ 
+    display: flex;
+    width:400 px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
 .instructions {
     position: fixed;
     /* background: lightgray; */
@@ -68,20 +75,32 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     color: rgb(33, 33, 33);
 }
 
+.guidelines {
+    position: fixed;
+    /* background: lightgray; */
+    top: 31vh;
+    width: 22vw;
+    right: calc(100vw/2 - 41vw);
+    text-align: left;
+    color: rgb(33, 33, 33);
+}
+
 .name {
     position: fixed;
     /* background: lightgray; */
-    top: 60vh;
+    top: 59vh;
     width: 20vw;
     right: calc(100vw/2 - 40vw);
     text-align: center;
     color: black;
+    font-size: 30px;
+
 }
 
 .artist {
     position: fixed;
     /* background: lightgray; */
-    top: 66.5vh;
+    top: 65.5vh;
     width: 20vw;
     right: calc(100vw/2 - 40vw);
     text-align: center;
@@ -97,6 +116,24 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     right: calc(100vw/2 - 39vw);
     text-align: center;
     background-size: 100% 100%;
+    border-radius: 25px;
+    z-index:2;
+    animation: fadeIn 2s;
+}
+
+.seeMore {
+    position: fixed;
+    background-color: white;    
+    /* background: lightgray; */
+    top: 80vh;
+    right: calc(100vw/2 - 34.3vw);
+    width: 9vw;
+    height: 5vh;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-size: 100% 100%;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 0.1);
     z-index:2;
     animation: fadeIn 2s;
 }
