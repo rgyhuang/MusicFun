@@ -2,9 +2,9 @@
 
 ![Thumbnail](https://i.imgur.com/gTq9Gpy.png)
 
-## What is title?
-Our project features the following functionalities:
-* **An aesthetic graph-based display of results, complete with album covers and links to the spotify recommendations!**
+## What is Music Fun :3?
+Music Fun :3 is our submission for [TartanHacks 2023!](https://tartanhacks.com/) Our project features the following functionalities:
+* **An aesthetic and interactive graph-based display of music search results, complete with album covers and links to the spotify recommendations!**
 * **Song recommendations based on input text emotion!**
 
 
