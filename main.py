@@ -70,7 +70,7 @@ def main():
   emotion = np.argmax(predict_emo(prompt))
 
   headers = {
-    'Authorization' : 'Bearer {}'.format("BQCOmfaDb2_bSU4oEKCx8ZKfAO2JVVDeFrCaf-FmS9D1esGlOyyJRXsNErDttw9UVkaDySfybJ6cApo7sw_z8hYIagQ06MtsAYIu7q66WyZINjwcV3lDLHV9bAHmAi0UVZTjDe4hGQRXOyqM8BzZREFFu6sU6v8--4jB-1qj-vMn9cAAME6Zv87owKzA6hpvjRn-")
+    'Authorization' : 'Bearer {}'.format("BQAe_Yeq3T6NAxK5LNKq-7XPtojz2FcQWHNtTaa4qFjFkDGRDqVxMOjNINdtYRFzpXcPNVmcRrJf68PqfY8yVNfjL9HXaoAtr0wmi14UUVESP77WMJND12sWSHz9Z0SgqDU-TlC8IaPwer0J47e1ZrVlBfMGB9jfQ3Y9256H0LsFKwSMVqjpNSwoOftCgpza3l1w")
   }
 
   # adjust parameters
