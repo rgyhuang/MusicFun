@@ -1,6 +1,6 @@
 # Music Fun :3
 
-![Demo](https://i.imgur.com/gTq9Gpy.png)
+![Thumbnail](https://i.imgur.com/gTq9Gpy.png)
 
 ## What is title?
 Our project features the following functionalities:
@@ -16,6 +16,9 @@ This project was built with a html/css javascript frontend and python backend. W
 * Further polish our graph aesthetics
 * Allow for variable numbers of requests (we currently only fetch 12 requests each time)
 * Add varying more seeds for artists and songs to increase randomization
+
+## Short demo of our project in action!
+![Demo](https://i.imgur.com/UAipupU.gif)
 
 ## Modules for Development
 ```
