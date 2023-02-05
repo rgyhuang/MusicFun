@@ -21,11 +21,8 @@ function myfunction_onload(prompt){
   console.log("Done!")
 }
 
-// myfunction_onload()
 
 
-
-// console.log(window.innerWidth)
 var margin  = {top: 10, right: 5, bottom: 10, left: 100},
     width   = 1150-margin.left-margin.right,
     height  = 900-margin.top-margin.bottom;   
@@ -61,27 +58,20 @@ var tooltip = d3.select('body').append('div') .attr("class","tooltip")
     { "target": 1, "source": 3 },
     { "target": 1, "source": 4 },
     { "target": 1, "source": 5 },
-    { "target": 2, "source": 1 },
     { "target": 2, "source": 3 },
     { "target": 2, "source": 4 },
     { "target": 2, "source": 5 },
-    { "target": 3, "source": 1 },
-    { "target": 3, "source": 2 },
     { "target": 3, "source": 4 },
     { "target": 3, "source": 5 },
-    { "target": 4, "source": 2 },
-    { "target": 4, "source": 3 },
     { "target": 4, "source": 5 },
     { "target": 5, "source": 1 },
-    { "target": 5, "source": 2 },
-    { "target": 5, "source": 3 },
     { "target": 5, "source": 4 },
     { "target": 6, "source": 1 },
     { "target": 6, "source": 2 },
     { "target": 6, "source": 3 },
     { "target": 6, "source": 4 },
     { "target": 6, "source": 5 },
-    { "target": 10, "source": 1 },
+    { "target": 10, "source": 9 },
     { "target": 11, "source": 2 },
     { "target": 7, "source": 3 },
     { "target": 9, "source": 4 },
