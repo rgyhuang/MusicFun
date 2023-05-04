@@ -1,4 +1,4 @@
-# Music Fun :3
+# Music Fun
 
 ![Thumbnail](https://i.imgur.com/gTq9Gpy.png)
 
